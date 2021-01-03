@@ -51,3 +51,5 @@ tools/mode2_decode
 
 # Mac extended attributes
 .DS_Store
+# VS COde
+**/.vscode/
