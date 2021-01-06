@@ -2017,6 +2017,9 @@ void setup_wifi(void) {
 #endif  // MIN_SIGNAL_STRENGTH
   wifiManager.setRemoveDuplicateAPs(HIDE_DUPLICATE_NETWORKS);
 
+  wifiManager.setHostname(Hostname);
+  wifiManager.setConnectTimeout(15);
+  
   if (!wifiManager.autoConnect())
     // Reboot. A.k.a. "Have you tried turning it Off and On again?"
     doRestart(D_STR_WIFI " failed to connect and hit timeout. Rebooting...",
