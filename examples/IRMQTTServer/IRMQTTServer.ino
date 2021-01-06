@@ -717,10 +717,10 @@ void handleRoot(void) {
     "<h3>Send a simple IR message</h3><p>"
     "<form method='POST' action='/ir' enctype='multipart/form-data'>"
       D_STR_PROTOCOL ": ");
-  html += htmlSelectAcStateProtocol(KEY_TYPE, decode_type_t::NEC, true);
+  html += htmlSelectAcStateProtocol(KEY_TYPE, decode_type_t::RC6, true);
   html += F(
       " " D_STR_CODE ": 0x<input type='text' name='" KEY_CODE "' min='0' "
-        "value='0' size='16' maxlength='16'> "
+        "value='00000' size='16' maxlength='16'> "
       D_STR_BITS ": "
       "<select name='" KEY_BITS "'>"
         "<option selected='selected' value='0'>Default</option>");  // Default

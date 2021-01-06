@@ -29,7 +29,7 @@
 
 #ifndef EXAMPLES_ENABLE
 // Whether or not examples are included. `false` saves ~2.5K of program space.
-#define EXAMPLES_ENABLE true
+#define EXAMPLES_ENABLE false
 #endif  // EXAMPLES_ENABLE
 
 // Uncomment one of the following to manually override what
